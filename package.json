@@ -2,7 +2,7 @@
   "name": "reactdemo4",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://d4r1ing.github.io/JiraClone/",
+  "homepage": "https://d4r1ing.github.io/",
   "dependencies": {
     "@ant-design/icons": "^4.7.0",
     "@testing-library/jest-dom": "^5.16.2",
