@@ -54,26 +54,15 @@ function App() {
     {/* <Modal /> */}
     <ModalJira />
       <Switch>
-        <HomeTemplate exact path='/home' Component={Home} />
-        <HomeTemplate exact path='/contact' Component={Contact} />
-        <HomeTemplate exact path='/about' Component={About} />
-        <HomeTemplate exact path='/dragDrop' Component={DemoDragDrop} />
-        <HomeTemplate exact path='/dragDropDnd' Component={DrapAndDropDnD} />
+        <JiraTemplate exact path='/home' Component={IndexJira} /> 
         <UserLoginTemplate exact path='/login' Component={LoginJira} />
         <UserLoginTemplate exact path='/signup' Component={SignUpJira} />
-        <HomeTemplate exact path='/detail/:id' Component={Detail} />
-        <HomeTemplate exact path='/profile' Component={Profile} />
-        <HomeTemplate exact path='/toDoListRCC' Component={ToDoList} />
-        <HomeTemplate exact path='/toDoListRFC' Component={ToDoListRFC} />
-        <HomeTemplate exact path='/toDoListRedux' Component={ToDoListRedux} />
-        <HomeTemplate exact path='/toDoListSaga' Component={BaiTapToDoListSaga} />
-        <HomeTemplate exact path='/demoHOCModal' Component={DemoHOCModal} />
         <JiraTemplate exact path='/jiraApp' Component={IndexJira} />
         <JiraTemplate exact path='/createProject' Component={CreateProject} />
         <JiraTemplate exact path='/projectManagement' Component={ProjectManagement} />
         <JiraTemplate exact path='/userManagement' Component={UserManagement} />
         <JiraTemplate exact path='/projectDetail/:projectId' Component={IndexJira} />
-        <HomeTemplate exact path='/' Component={Home} />
+        <UserLoginTemplate exact path='/' Component={LoginJira} />
         <HomeTemplate path='*' Component={PageNotFound} />
       </Switch>
     </>
